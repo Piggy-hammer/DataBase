@@ -1,5 +1,5 @@
 .background {
-    -fx-background-color: #1d1d1d;
+    -fx-background-color: black;
 }
 
 .label {
@@ -17,15 +17,17 @@
 }
 
 .label-bright {
+    -fx-background-color:derive(#1d1d1d,20%);
     -fx-font-size: 20pt;
-    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-family: "System";
     -fx-text-fill: white;
     -fx-opacity: 1;
 }
 
 .label-header {
-    -fx-font-size: 32pt;
-    -fx-font-family: "Segoe UI Light";
+    -fx-font-size: 40pt;
+    -fx-font-family: "System";
+    -fx-front-style: "Bold";
     -fx-text-fill: white;
     -fx-opacity: 1;
 }
@@ -33,7 +35,7 @@
 .label-tips {
     -fx-font-size: 10pt;
     -fx-font-family: "System";
-    -fx-front-style: "Bold"
+    -fx-front-style: "Bold";
     -fx-text-fill: white;
     -fx-opacity: 0.7;
 }
@@ -89,7 +91,7 @@
 
 .split-pane {
     -fx-padding: 1 0 0 0;
-    -fx-background-color: derive(#1d1d1d,5%);
+    -fx-background-color: black;
 }
 
 .menu-bar {
@@ -126,10 +128,9 @@
 .button {
     -fx-padding: 5 22 5 22;
     -fx-border-color: derive(#1d1d1d,50%);
-    -fx-border-width: 1;
+    -fx-border-width: 0.5;
     -fx-background-radius: 0;
     -fx-background-color: black;
-    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     -fx-text-fill: #d8d8d8;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
 }
