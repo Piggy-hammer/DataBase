@@ -1,15 +1,18 @@
 package sample;
 
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class MainController {
-    private Stage stage;
-    private Manager manager;
+    Stage stage;
+    Manager manager;
+    SplitPane splitPane;
 
     public void init(Stage stageIn, Manager managerIn, int authority) throws IOException {
         stage = stageIn;
@@ -22,9 +25,15 @@ public class MainController {
              loader = new FXMLLoader((Main.class.getResource("/guest.fxml")));
 
         }
-        SplitPane splitPane = loader.load();
+        splitPane = loader.load();
         Scene sceneMain = new Scene(splitPane);
         stage.setScene(sceneMain);
         stage.centerOnScreen();
+    }
+
+    @FXML
+    private void Onsale() throws IOException {
+        OnsaleController onsaleController = new OnsaleController();
+        onsaleController.init(splitPane);
     }
 }
