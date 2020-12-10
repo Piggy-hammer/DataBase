@@ -1,5 +1,6 @@
 package sample;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -36,7 +37,7 @@ public class Manager {
         return 1;
     }
 
-    public List<House> getPing() {
+    public List<House> getPing() throws IOException {
         /*
         执行对平层的查询，以List<House>返回
          */

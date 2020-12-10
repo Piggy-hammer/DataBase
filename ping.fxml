@@ -9,7 +9,7 @@
 
 <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="512.0" style="-fx-background-color: black;" styleClass="background" stylesheets="@sample/DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OnsaleController">
    <content>
-      <VBox id="VB" prefHeight="200.0" prefWidth="499.0" style="-fx-background-color: black;">
+      <VBox prefHeight="200.0" prefWidth="499.0" style="-fx-background-color: black;">
       </VBox>
    </content>
 </ScrollPane>
