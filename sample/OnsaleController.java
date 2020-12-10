@@ -23,6 +23,7 @@ public class OnsaleController {
         System.out.println(loader.getLocation());
         AnchorPane anchorPane = loader.load();
         splitPane = tPane;
+        this.manager = manager;
         splitPane.getItems().set(1,anchorPane);
     }
 
@@ -32,6 +33,7 @@ public class OnsaleController {
         ScrollPane anchorPane = loader.load();
         splitPane.getItems().set(1,anchorPane);
         List<House> list = manager.getPing();
+        System.out.println(list.get(1).huXing);
         for (House e : list
              ) {
             e.getHouse();
