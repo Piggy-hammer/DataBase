@@ -20,11 +20,11 @@ public class HouseC {
     javafx.scene.control.Button Button;
     House house;
     AnchorPane pane;
+    static FXMLLoader loader = new FXMLLoader(Main.class.getResource("/house.fxml"));
 
     public HouseC(House house) throws IOException {
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("/house.fxml"));
-        System.out.println(loader.getLocation().toString());
-        this.pane = loader.load();
+            System.out.println(loader.getLocation().toString());
+            this.pane = loader.load();
     }
     public AnchorPane a (){
         return pane;
