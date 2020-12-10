@@ -173,4 +173,26 @@
     -fx-text-fill: #d8d8d8;
 }
 
+.scroll-bar:vertical .thumb {
+    -fx-background-color: black;
+}
 
+.scroll-bar:vertical .track {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.scroll-bar:vertical .button {
+    -fx-background-color: derive(#1d1d1d,50%);
+    -fx-width: 0;
+}
+
+.scroll-bar:vertical {
+    -fx-width: 10;
+}
+
+.scroll-bar {
+    -fx-background-color: black;
+}
+.scroll-pane {
+    -fx-background-color: black;
+}

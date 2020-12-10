@@ -10,9 +10,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class MainController {
-    Stage stage;
-    Manager manager;
-    SplitPane splitPane;
+    static Stage stage;
+    static Manager manager;
+    static SplitPane splitPane;
 
     public void init(Stage stageIn, Manager managerIn, int authority) throws IOException {
         stage = stageIn;
@@ -34,6 +34,6 @@ public class MainController {
     @FXML
     private void Onsale() throws IOException {
         OnsaleController onsaleController = new OnsaleController();
-        onsaleController.init(splitPane);
+        onsaleController.init(splitPane,manager);
     }
 }

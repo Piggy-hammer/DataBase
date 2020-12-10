@@ -3,6 +3,8 @@ package sample;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Manager {
     public void init(){
@@ -32,5 +34,16 @@ public class Manager {
         没有该用户返回0
          */
         return 1;
+    }
+
+    public List<House> getPing() {
+        /*
+        执行对平层的查询，以List<House>返回
+         */
+        List<House> list = new LinkedList();
+        for(int inte = 0; inte < 10; inte++){
+            list.add(new House("huxing",234,"@yue.png"));
+        }
+        return list;
     }
 }
