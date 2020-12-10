@@ -17,7 +17,6 @@
 }
 
 .label-bright {
-    -fx-background-color:derive(#1d1d1d,20%);
     -fx-font-size: 20pt;
     -fx-font-family: "System";
     -fx-text-fill: white;

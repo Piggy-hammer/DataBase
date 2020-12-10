@@ -13,8 +13,6 @@ import java.util.List;
 public class OnsaleController {
     static Manager manager;
     static SplitPane splitPane;
-    @FXML
-    VBox VB;
     
     public OnsaleController(){
     }
@@ -34,9 +32,10 @@ public class OnsaleController {
         splitPane.getItems().set(1,anchorPane);
         List<House> list = manager.getPing();
         System.out.println(list.get(1).huXing);
+        VBox VB1 = (VBox) anchorPane.getContent();
         for (House e : list
              ) {
-            e.getHouse();
+            VB1.getChildren().add(e.getHouse());
         }
     }
 }
