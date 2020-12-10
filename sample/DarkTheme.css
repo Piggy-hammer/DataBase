@@ -195,3 +195,10 @@
 .scroll-pane {
     -fx-background-color: black;
 }
+.grid-pane {
+    -fx-background-color: black;
+
+}
+.grid-pane-row {
+    -fx-height:100;
+}

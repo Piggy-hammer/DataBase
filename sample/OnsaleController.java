@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.SplitPane;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
@@ -30,12 +31,7 @@ public class OnsaleController {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("/ping.fxml"));
         ScrollPane anchorPane = loader.load();
         splitPane.getItems().set(1,anchorPane);
-        List<House> list = manager.getPing();
-        System.out.println(list.get(1).huXing);
-        VBox VB1 = (VBox) anchorPane.getContent();
-        for (House e : list
-             ) {
-            VB1.getChildren().add(e.getHouse());
-        }
+        GridPane gridPane = (GridPane)anchorPane.getContent();
+        gridPane.
     }
 }
