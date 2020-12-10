@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="root" prefHeight="150.0" prefWidth="498.0" styleClass="background" stylesheets="@sample/DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HouseC">
+    <children>
+        <ImageView fx:id="Image" fitHeight="150.0" fitWidth="150.0" layoutX="-21.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@2f9dd9642431bbef883d72313dd8aed4.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="Button" layoutX="358.0" layoutY="8.0" mnemonicParsing="false" prefWidth="140.0" styleClass="label-bright" text="立刻&#10;订购" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <Label fx:id="Rent" styleClass="label-bright" text="Label" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="20.0" />
+        <Label fx:id="Loc" text="Label" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="170.0" />
+    </children>
+</AnchorPane>
